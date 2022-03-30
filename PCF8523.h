@@ -222,6 +222,8 @@ class PCF8523{
 		static void setTime(const DateTime& dt);
 
 		static DateTime readTime();
+    static DateTime now();
+    static void adjust(const DateTime& dt);
 
 		// Alarms
 		void setAlarm(uint8_t minute_alarm ); 
@@ -259,6 +261,7 @@ class PCF8523{
 		// void startCounter_1(uint8_t value);
 		void setBatterySwitchover(void);
 	protected:
+    static long offset;
 		void stop_32768_clkout();
 		uint8_t clearRtcInterruptFlags();
 		void 	rtcCapSelect(eCAP_SEL value);
