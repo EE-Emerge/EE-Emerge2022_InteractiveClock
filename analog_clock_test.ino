@@ -18,15 +18,16 @@ typedef struct {
 
 static LED leds[numLEDs]; //= {{0,0,0}}; 
 
-int LEDOffset = 15;
+int LEDOffset = 0;
+int next_flag = 0;
 
 //Setup 60 GRB LED Strip on Launchpad pin 2
 //WS2811Driver ledStrip = WS2811Driver(27, 15, NEO_GRB);
-static void ShowDigit(uint32_t digit, ColorMap color);
+//static void ShowDigit(uint32_t digit, ColorMap color);
 const unsigned long MCLK_HZ = 16000000;  
 void setup()
 {
-   Serial.begin(57600); // Starts the serial communications
+   Serial.begin(4800); // Starts the serial communications
    Serial.print("Program ");
 
    
@@ -105,9 +106,9 @@ void loop()
   DateTime now = RTC.now();
   RTCM.adjust(DateTime(now.year(), now.month(), now.day(), 0, now.minute(), now.second()));
  
-  minimalClock(now);
 
-    Serial.print("Hour time is... ");
+  minimalClock(now);
+  Serial.print("Hour time is... ");
   Serial.println(now.hour());
   Serial.print("Min time is... ");
   Serial.println(now.minute());
@@ -120,7 +121,7 @@ void loop()
   Serial.println(now.month());
   Serial.print("Day is... ");
   Serial.println(now.day());
-
+  
 
 }
 
@@ -129,15 +130,19 @@ void minimalClock(DateTime now)
 
   unsigned char hourPos = (now.hour()%12)*5; 
 
-//if (((hourPos+LEDOffset)%27-1 != ((now.minute()+LEDOffset)%27)) && (((hourPos+LEDOffset)%27-1 != (now.second()+LEDOffset)%27))) {
-    setLEDColor((hourPos+LEDOffset)%60-1, COLOR_OFF);
+if (((hourPos+LEDOffset)%60-5 != ((now.minute()+LEDOffset)%60)) && (((hourPos+LEDOffset)%60-5 != (now.second()+LEDOffset)%60))) {
+    setLEDColor((hourPos+LEDOffset)%60-5, COLOR_OFF);
     showStrip();
-  //}
-     if (((now.minute()+LEDOffset)%60-1 != (hourPos+LEDOffset)%60)) {
+  }
+     if ((((now.minute()+LEDOffset)%60-1 != (hourPos+LEDOffset)%60)) && (((now.minute()+LEDOffset)%60-1 != (now.second()+LEDOffset)%60))) {
       //if ((now.minute()+LEDOffset)==26) {
         //if(((hourPos+LEDOffset)%27) != 26) {
           setLEDColor((now.minute()+LEDOffset)%60-1, COLOR_OFF);
           showStrip();
+          if (((now.minute()+LEDOffset)%60 == (hourPos+LEDOffset)%60)) {
+             setLEDColor((now.minute()+LEDOffset)%60, COLOR_RED);
+          }
+
         //}
       //}
 
@@ -146,20 +151,38 @@ void minimalClock(DateTime now)
     if ((((now.second()+LEDOffset)%60-1 != (hourPos+LEDOffset)%60)) && ((now.second()+LEDOffset)%60-1 != (now.minute()+LEDOffset)%60)) {
          //if ((now.second()+LEDOffset)==26) {
             //if((((hourPos+LEDOffset)%27) != 26) && (((now.minute()+LEDOffset)%27) != 26))  {
-                setLEDColor((now.second()+LEDOffset)%60-1, COLOR_OFF);
+                if (next_flag == 1) {
+                  setLEDColor(59, COLOR_OFF);
+                  next_flag = 0;
+                }
+                else {
+                  setLEDColor((now.second()+LEDOffset)%60-1, COLOR_OFF);
+                  if ((now.second()+LEDOffset)%60 == 0) {
+                    next_flag = 1;
+                  }
+                }
+                if (((now.second()+LEDOffset)%60 == (hourPos+LEDOffset)%60)) {
+                  setLEDColor((now.second()+LEDOffset)%60, COLOR_RED);
+                }
+                if (((now.second()+LEDOffset)%60 == (now.minute()+LEDOffset)%60)) {
+                  setLEDColor((now.second()+LEDOffset)%60, COLOR_GREEN);
+                }
+
                 showStrip();
             //}  
          //}
     }
 
-    setLEDColor((hourPos+LEDOffset)%60, COLOR_RED);
-    showStrip();
-    
-    setLEDColor((now.minute()+LEDOffset)%60, COLOR_GREEN);
-    showStrip();
    
     setLEDColor((now.second()+LEDOffset)%60, COLOR_BLUE);
     showStrip();
+
+    setLEDColor((now.minute()+LEDOffset)%60, COLOR_GREEN);
+    showStrip();
+
+    setLEDColor((hourPos+LEDOffset)%60, COLOR_RED);
+    showStrip();
+    
 
 
 }
