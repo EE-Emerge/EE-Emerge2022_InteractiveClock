@@ -1,7 +1,11 @@
 #include "ws2812.h"
 #include "Wire.h"
 #include "PCF8523.h"
+#include <SoftwareSerial.h>
+#define TXD 4
+#define RXD 3
 
+SoftwareSerial RS485_serial (RXD, TXD);
 
 PCF8523 RTC; // Establishes the chipset of the Real Time Clock
 RTC_Millis RTCM;
@@ -29,7 +33,8 @@ void setup()
 {
    Serial.begin(4800); // Starts the serial communications
    Serial.print("Program ");
-
+  RS485_serial.begin(28800);
+ // pinMode(RS485_control,OUTPUT);
    
    if (!RTC.begin()) {
     Serial.println("Couldn't find RTC");
@@ -102,7 +107,6 @@ void loop()
   RTCM.adjust(DateTime(F(__DATE__), F(__TIME__)));
   DateTime now = RTC.now();
   RTCM.adjust(DateTime(now.year(), now.month(), now.day(), 0, now.minute(), now.second()));
- 
 
   minimalClock(now);
   Serial.print("Hour time is... ");
@@ -118,7 +122,12 @@ void loop()
   Serial.println(now.month());
   Serial.print("Day is... ");
   Serial.println(now.day());
-  
+
+  Serial.write(0xAB);
+  Serial.write(now.second());
+  Serial.write(now.minute());
+  Serial.write(now.hour());
+  Serial.write(0xBA);
 
 }
 
