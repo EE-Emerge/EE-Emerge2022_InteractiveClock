@@ -1,0 +1,5 @@
+---
+layout: default
+title: ACKNOWLEDGEMENTS PAGE TITLE
+description: ACKNOWLEDGEMENTS PAGE DESCRIPTION
+---

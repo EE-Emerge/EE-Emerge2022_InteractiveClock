@@ -1,1 +1,11 @@
-theme: jekyll-theme-cayman
+title: EE-EMRGE WEBSITE TEMPLATE
+tagline: EE-EMERGE WEBSITE TAGLINE
+show_downloads: true
+remote_theme: tuur29/pages-themes-cayman
+hide_first_title: false # Useful if README.md is used on both github and pages
+color:
+  header: "#FFFFFF"
+  gradient_left: "#FFBF00"
+  gradient_right: "#022851"
+  section_title: "#000000" # this default to gradient_color
+  link: "#000000"
