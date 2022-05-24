@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LIXIE DISPLAY
+title: INFINITE MIRROR
 description: type stuff here
 ---
 
