@@ -1,6 +1,6 @@
 ---
 layout: default
-title: INFINITE MIRROR
+title: INFINITY MIRROR
 description: type stuff here
 ---
 
