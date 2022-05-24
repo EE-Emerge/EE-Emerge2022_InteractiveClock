@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ABOUT PAGE TITLE
-description: ABOUT PAGE DESCRIPTION
+title: ABOUT OUR TEAM
+description: Come check out our amazing team members and how awesome they are. Yeah! Guys if you see this we need profile pictures. I'm testing how different PNG file sizes affect the look forgive me. Ivan Joshua
 ---
 
 | | |
