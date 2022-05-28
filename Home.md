@@ -1,2 +1,2 @@
-layout: page
-title: "Home"
+layout: deafult
+title: Home
