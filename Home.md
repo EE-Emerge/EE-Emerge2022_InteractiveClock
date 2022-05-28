@@ -1,2 +1,4 @@
-layout: deafult
+--
+layout: default
 title: Home
+--
