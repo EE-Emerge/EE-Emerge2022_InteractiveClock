@@ -1,8 +1,12 @@
----
+--
 layout: default
 title: Lixie Clock
-description: The Lixie clock draws heavy inspiration from retro-style Nixie tubes, but the design uses low-voltage LEDs as illumination rather than the quite dangerous, high-voltage filaments used in Nixie tubes. The LEDs light etched arylic panes from the underside according to the current time.
----
+--
+
+# description
+
+The Lixie clock draws heavy inspiration from retro-style Nixie tubes, but the design uses low-voltage LEDs as illumination rather than the quite dangerous, high-voltage filaments used in Nixie tubes. The LEDs light etched arylic panes from the underside according to the current time.
+
 <p align = "center">
   <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="450">
   <img src="{{site.baseurl}}/assets/images/5digitdisplay.png" width="450">
