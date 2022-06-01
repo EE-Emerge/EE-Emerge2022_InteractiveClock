@@ -7,7 +7,7 @@ description: Come check out our amazing team members and how awesome they are. Y
 | | |
 |:---------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------:|
 |**Damien Scholzen** <br/> **Team Leader** <br/> Electrical Engineering <br/> Focus: XXX <br/> [LinkedIn](https://linkedIn.com)  & [GitHub](https://github.com/damscho) | ![MEMEBR NAME]({{site.baseurl}}/assets/images/cat2.jpeg) |
-|**Waylon Pattison** <br/> Electrical Engineering <br/> [LinkedIn](https://www.linkedin.com/in/waylon-pattison/) & [GitHub](https://github.com/EE-Wav) | ![MEMEBR NAME]({{site.baseurl}}/assets/images/WaylonProfessionalPic600pixlen.jpg) |
+|**Waylon Pattison** <br/> Electrical Engineering <br/> [LinkedIn](https://www.linkedin.com/in/waylon-pattison/) & [GitHub](https://github.com/EE-Wav) | ![MEMEBR NAME]({{site.baseurl}}/assets/images/WaylonProfessionalPic400pixlen.jpg) |
 |**Htet Myat** <br/>                 <br/> DEGREE <br/> Focus: XXX <br/> [LinkedIn](https://linkedIn.com)  & [GitHub](https://github.com) | ![MEMEBR NAME]({{site.baseurl}}/assets/css/octocat.png) |
 |**Sabrina Noorahmed-Yarzada** <br/>                 <br/> DEGREE <br/> Focus: XXX <br/> [LinkedIn](https://linkedIn.com)  & [GitHub](https://github.com) | ![MEMEBR NAME]({{site.baseurl}}/assets/css/octocat.png) |
 |**Kelvin Truong** <br/>                 <br/> DEGREE <br/> Focus: XXX <br/> [LinkedIn](https://linkedIn.com)  & [GitHub](https://github.com) | ![MEMEBR NAME]({{site.baseurl}}/assets/images/testimage840x840pixels.png) |
