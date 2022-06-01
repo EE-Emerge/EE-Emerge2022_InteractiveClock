@@ -4,7 +4,7 @@ title: test TITLE
 description: test PAGE DESCRIPTION
 ---
 
-<p float="center">
+<p align="center">
   <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="300" />
   <img src="{{site.baseurl}}/assets/images/5digitdisplay.png" width="300" /> 
 </p>
