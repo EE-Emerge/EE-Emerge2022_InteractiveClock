@@ -5,8 +5,8 @@ description: test PAGE DESCRIPTION
 ---
 
 <p align="center">
-  <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="300" />
-  <img src="{{site.baseurl}}/assets/images/5digitdisplay.png" width="300" /> 
+  <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="400" />
+  <img src="{{site.baseurl}}/assets/images/5digitdisplay.png" width="400" /> 
 </p>
 
 Lixie Display is a depiction of digital clock. In this project, six lixie modules are made. Each pair representing hour, minute, and second. Six sets of acrylic signs are engraved with numbers from zero to nine. 
