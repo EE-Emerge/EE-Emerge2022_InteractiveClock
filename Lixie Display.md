@@ -4,6 +4,11 @@ title: test TITLE
 description: test PAGE DESCRIPTION
 ---
 
+<p float="left">
+  <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="200" />
+  <img src="{{site.baseurl}}/assets/images/5digitdisplay.png" width="200" /> 
+</p>
+
 Lixie Display is a depiction of digital clock. In this project, six lixie modules are made. Each pair representing hour, minute, and second. Six sets of acrylic signs are engraved with numbers from zero to nine. 
 
 The enclosure is designed and 3D-printed. The design focuses on housing the PCB and creating ten slots to insert the acrylics on top of the enclosure. The vertical small gap is left on the back of the enclosure for cable management and easier closure of the lid. 
