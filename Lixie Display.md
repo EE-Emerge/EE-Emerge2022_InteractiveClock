@@ -4,7 +4,7 @@ title: Lixie Clock
 discription: EE-Emerge 2021-2022
 ---
 
-# Lixie Clock
+<h1 style="color:darkviolet;">Lixie Clock</h1>
 
 <p align = "center">
   <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="400">
@@ -13,7 +13,7 @@ discription: EE-Emerge 2021-2022
 
 The Lixie clock draws heavy inspiration from retro-style Nixie tubes, but the design uses low-voltage LEDs as illumination rather than the quite dangerous, high-voltage filaments used in Nixie tubes. The LEDs light etched arylic panes from the underside according to the current time.
 
-# Enclosure
+<h2 style="color:darkviolet;">Enclosure</h2>
 
 <p align = "center">
   <img src="{{site.baseurl}}/assets/images/Lixie Enclosure.jpg" width="400">
@@ -22,7 +22,7 @@ The Lixie clock draws heavy inspiration from retro-style Nixie tubes, but the de
 
 The enclosure is designed in "Autodesk Fusion 360" and 3D-printed. The design focuses on housing the PCB and creating ten slots to insert the acrylics on top of the enclosure. The vertical small gap is left on the back of the enclosure for cable management and smooth closure for the lid. 
 
-# PCB
+<h2 style="color:darkviolet;">PCB Design</h2>
 
 <p align = "center">
   <img src="{{site.baseurl}}/assets/images/LED PCB.jpg" width="400">
