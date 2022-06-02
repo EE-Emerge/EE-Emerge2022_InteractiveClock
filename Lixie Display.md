@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lixie Clock
+title: LIXIE DISPLAY
 discription: EE-Emerge 2021-2022
 ---
 
