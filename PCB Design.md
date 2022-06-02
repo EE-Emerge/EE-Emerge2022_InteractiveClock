@@ -3,7 +3,7 @@ layout: default
 title: PCB Design
 description: HARDWARE PAGE DESCRIPTION
 ---
-
+If we barely have any content to write here, we can delete this and split portions between Lixie and Mirror - Ivan Joshua
 # Hardware Design Revision 1
 
 ## Module 1
