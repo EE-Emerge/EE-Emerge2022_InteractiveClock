@@ -3,6 +3,9 @@ layout: default
 title: INTERACTIVE CLOCK
 description: EE-Emerge 2021-2022
 ---
+
+<h1 style="color:darkviolet;">Interactive Clock</h1>
+
 <p align = "center">
 <img src="{{site.baseurl}}/assets/images/bothdisplaysinfinityclock.png" width="700">
   </p>
