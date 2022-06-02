@@ -4,7 +4,7 @@ title: SOFTWARE
 description: EE-Emerge 2021-2022
 ---
 
-# Software
+<h1> Software </h1>
 
 The Energia integrated development environment (Version 1.8.7E21) produced by Texas Instruments was used to write C/C++ code to program several MSP430 microcontrollers used to drive the circuits of both the Infinity Mirror Clock and the Digit Clock composed of six individual digit modules reminiscent of Nixie tubes.
 
