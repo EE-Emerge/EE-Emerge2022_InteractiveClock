@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ABOUT OUR TEAM
-description: Come check out our amazing team members and how awesome they are. Yeah! Guys if you see this we need profile pictures. I'm testing how different PNG file sizes affect the look forgive me. Ivan Joshua
+description: Get to know some of our amazing team members! We're a mix of junior Electrical & Computer Engineering students. 
 ---
 
 | | |
