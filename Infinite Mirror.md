@@ -16,7 +16,7 @@ In order to implement an analog clock within the infinity mirror, the individual
 <h2 style="color:darkviolet;">Enclosure</h2>
 
 <p align = "center">
-  <img src="{{site.baseurl}}/assets/images/infinitymirrorenclosure.png" width="400">
+  <img src="{{site.baseurl}}/assets/images/InfinityMirrorEnclosure.png" width="400">
   <img src="{{site.baseurl}}/assets/images/infinitymirrorenclosurecutv3.png" width="400">
   </p>
 
