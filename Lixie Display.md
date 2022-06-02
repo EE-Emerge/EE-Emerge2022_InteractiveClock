@@ -4,12 +4,14 @@ title: Lixie Clock
 discription: EE-Emerge 2021-2022
 ---
 
-The Lixie clock draws heavy inspiration from retro-style Nixie tubes, but the design uses low-voltage LEDs as illumination rather than the quite dangerous, high-voltage filaments used in Nixie tubes. The LEDs light etched arylic panes from the underside according to the current time.
-
 <p align = "center">
   <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="400">
   <img src="{{site.baseurl}}/assets/images/5digitdisplay.png" width="400">
   </p>
+
+The Lixie clock draws heavy inspiration from retro-style Nixie tubes, but the design uses low-voltage LEDs as illumination rather than the quite dangerous, high-voltage filaments used in Nixie tubes. The LEDs light etched arylic panes from the underside according to the current time.
+
+
 # Hardware Design Revision 1
 
 ## Module 1
