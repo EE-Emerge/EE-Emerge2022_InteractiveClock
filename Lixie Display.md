@@ -7,7 +7,7 @@ discription: EE-Emerge 2021-2022
 # Lixie Clock
 
 <p align = "center">
-  <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="400">
+  <img src="{{site.baseurl}}/assets/images/3digitdisplay.png" width="500">
   <img src="{{site.baseurl}}/assets/images/LixieCad.png" width="400">
   </p>
 
