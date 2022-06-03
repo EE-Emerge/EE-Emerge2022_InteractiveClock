@@ -1,7 +1,7 @@
 ---
 layout: default
 title: LIXIE DISPLAY
-discription: EE-Emerge 2021-2022
+description: EE-Emerge 2021-2022
 ---
 
 <h1 style="color:darkviolet;">Lixie Clock</h1>
